@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Feedback Site{% endblock%}</title>
+    <style>
+        body{font-family :Arial, Helvetica, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;}
+        header, footer{background: #35424a; color: #ffffff; padding: 10px 0; text-align: center;}
+        nav a{color: #ffffff; text-decoration: none; padding: 10px 15px;}
+        nav a:hover{background: #e8491d; color: #ffffff;} 
+        main{max-width: 800px; margin: auto; padding: 20px; background: #ffffff; border-radius: 5px;}        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feedback Site</h1>
+        <nav>
+            <a href="/feedback">Feedback</a>
+        </nav>
+        </header>
+
+        <main>
+            {% block content %}
+            <p>Welcome to the feedback site! Please share your thoughts.</p>
+            {% endblock %}  
+        </main>
+        <footer>
+            <p>&copy; 2025 Shon Feedback Site</p>    
+        </footer>
+</body>
+</html>
